@@ -4,6 +4,7 @@ import { Pagination } from 'react-bootstrap'
 export default function JobsPagination({ page, setPage, hasNextPage }) {
   function adjustPage(amount) {
     setPage(prevPage => prevPage + amount)
+    window.scrollTo(0,0);
   }
 
   return (
